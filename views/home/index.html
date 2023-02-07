@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    TEST
+    {% for x in genres %}
+        {{x }}
+    {% endfor %}
+    <form action="api/predict" method="POST">
+        {% csrf_token %}
+        <textarea name="sinopsys"></textarea>
+        <button type="submit">PREDIKSI</button>
+    </form>
+</html>
